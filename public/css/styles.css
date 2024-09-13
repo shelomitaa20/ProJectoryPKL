@@ -1,0 +1,591 @@
+/* Global Styling */
+body {
+    background-color: #f7f7f7;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    padding-top: 56px;
+}
+
+/* Header Styling */
+.header {
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header .brand {
+    display: flex;
+    align-items: center;
+}
+
+.header .brand img {
+    max-width: 45px;
+    margin-right: 10px;
+    margin-left: 6px;
+}
+
+.header .brand span {
+    color: #000053;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.header .h4 {
+    color: #000053;
+}
+
+/* User Info Styling */
+.user-info .dropdown-toggle {
+    background: linear-gradient(to right, rgba(106, 17, 203, 0.8), rgba(37, 117, 252, 0.8));
+    border: none;
+    padding: 8px 15px;
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.user-info .dropdown-toggle:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.user-info .dropdown-menu {
+    min-width: 200px;
+}
+
+.user-info .dropdown-menu .dropdown-item {
+    padding: 10px 20px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    height: 100vh;
+    position: fixed;
+    top: 75px;
+    left: 0;
+    width: 250px;
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1020;
+}
+
+.sidebar a.nav-link {
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar a.nav-link.active {
+    background: linear-gradient(to right, rgba(106, 17, 203, 0.8), rgba(37, 117, 252, 0.8));
+    color: #ffffff;
+}
+
+.sidebar .nav-link.active i {
+    color: #ffffff;
+}
+
+.sidebar a.nav-link:hover {
+    background-color: #f0f0f0;
+}
+
+.sidebar .nav-link i {
+    margin-right: 10px;
+    color: #000053;
+}
+
+/* Main Content Styling */
+.main-content {
+    margin-left: 240px;
+    padding: 25px;
+    background-color: #f7f7f7;
+}
+
+/* Welcome Box Styling */
+.welcome-box {
+    background-color: #fcfcfc;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 3px;
+    margin-bottom: 25px;
+}
+
+.welcome-box:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+    transition: transform 0.3s ease
+}
+
+.welcome-box-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 5px;
+    color: #000053;
+}
+
+/* Card Styling */
+.card-custom {
+    background-color: #ffffff;
+    border-left: 5px solid rgba(37, 116, 252, 0.893);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-custom:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+    transition: transform 0.3s ease
+}
+
+.card-custom .card-icon {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    font-size: 3.1rem;
+    color: #3131d3;
+}
+
+.card-custom .card-title {
+    margin-left: 68px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.card-custom .card-title-profile-details {
+    margin-left: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000053;
+}
+
+.card-custom .card-text {
+    margin-left: 70px;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 10px;
+    color: #000000;
+}
+
+.card-custom .card-footer {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Tab Description Card Styling */
+.card-header {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Profile Card Styling */
+.profile-card {
+    background-color: #ffffff;
+    border-left: 5px solid rgba(37, 116, 252, 0.893);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+    transition: transform 0.3s ease
+}
+
+.profile-card .profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-card .profile-info img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-card .profile-info .details {
+    color: #333;
+}
+
+.profile-card .profile-info .details h5 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.profile-card .profile-info .details div {
+    font-weight: 400;
+    color: #313131b6;
+}
+
+.profile-card .see-details {
+    text-decoration: none;
+    background-color: #000053;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.profile-card .see-details:hover {
+    background-color: #333;
+}
+
+/* Table Styling */
+.table-container {
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.custom-table {
+    margin-top: 10px;
+}
+
+.custom-table tbody td {
+    vertical-align: middle;
+    padding: 15px 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.custom-table .icon-small {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    color: #000053;
+}
+
+/* Action Button Styling */
+.action-button {
+    background-color: #6c757d;
+    border: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    max-width: 150px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.action-button:hover {
+    background-color: #5a6268;
+}
+
+.dropdown-toggle {
+    width: 100%;
+    text-align: center;
+}
+
+.dropdown-menu {
+    width: auto;
+}
+
+.custom-table .dropdown-toggle {
+    width: 100%;
+    text-align: center;
+}
+
+.custom-table .dropdown-menu {
+    width: 100%;
+}
+
+.custom-table .dropdown-item {
+    width: 100%;
+}
+
+.custom-table tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.custom-table tr td {
+    flex: 1;
+}
+
+/* Badge Styling */
+.badge {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.badge.bg-primary {
+    background-color: #007bff;
+}
+
+.badge.bg-purple {
+    background-color: #6f42c1;
+}
+
+.badge.bg-success {
+    background-color: #28a745;
+}
+
+.badge-in-progress {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.badge-completed {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.badge-to-do {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Task Details Modal Styling */
+.task-heading {
+    font-size: 1.25rem;
+}
+
+.task-detail {
+    padding: 15px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.detail-item {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail-item strong {
+    width: 30%;
+    font-weight: 600;
+    color: #000000;
+}
+
+.detail-item span {
+    width: 65%;
+    text-align: left;
+    background-color: #f7f7f7;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #555;
+}
+
+/* Modal Header Styling */
+.modal-header {
+    color: #0d6efd;
+    border-bottom: 1px solid #ddd;
+}
+
+.modal-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* Button and Color Variants */
+.btn-blue {
+    background: rgba(37, 116, 252, 0.893);
+    color: white;
+    border-radius: 8px;
+}
+
+.btn-blue:hover {
+    background: rgba(24, 79, 174, 0.935);
+    color: white;
+}
+
+.bg-blue {
+    background: rgba(37, 116, 252, 0.893);
+}
+
+.btn-gray {
+    background: rgba(92, 92, 92, 0.818);
+    color: white;
+    border-radius: 8px;
+}
+
+.btn-gray:hover {
+    background: rgb(55, 55, 55);
+    color: white;
+}
+
+.bg-gray {
+    background: rgba(92, 92, 92, 0.818);
+}
+
+.btn-green {
+    background: rgba(38, 154, 38, 0.805);
+    color: white;
+    border-radius: 8px;
+}
+
+.btn-green:hover {
+    background: rgba(23, 95, 23, 0.851);
+    color: white;
+}
+
+.bg-green {
+    background: rgba(38, 154, 38, 0.805);
+}
+
+.btn-red {
+    background: rgba(220, 0, 0, 0.751);
+    color: white;
+    border-radius: 8px;
+}
+
+.btn-red:hover {
+    background: rgba(155, 2, 2, 0.909);
+    color: white;
+}
+
+.btn-purple {
+    background: rgba(77, 12, 156, 0.736);
+    color: white;
+    border-radius: 8px;
+}
+
+.btn-purple:hover {
+    background: rgba(67, 11, 136, 0.921);
+    color: white;
+}
+
+.bg-purple {
+    background: rgba(118, 20, 222, 0.662);
+}
+
+/* Calendar Button Styling */
+.fc-today-button {
+    background: rgba(46, 46, 46, 0.905) !important;
+    color: white !important;
+    border-color: rgba(92, 92, 92, 0.818) !important;
+    border-radius: 8px !important;
+}
+
+.fc-today-button:hover {
+    background-color: rgb(30, 29, 29)!important;
+    border-color: rgb(30, 29, 29) !important;
+}
+
+.fc-dayGridMonth-button{
+    background-color: rgba(37, 116, 252, 0.893) !important;
+    color: white !important;
+    border-color: rgba(37, 116, 252, 0.893) !important;
+    border-radius: 8px !important;
+}
+
+.fc-dayGridMonth-button:hover {
+    background-color: rgba(24, 79, 174, 0.935) !important;
+    border-color: rgba(24, 79, 174, 0.935) !important;
+}
+
+.fc .fc-button{
+    background-color: rgba(37, 116, 252, 0.893) !important;
+    color: white !important;
+    border-color: rgba(37, 116, 252, 0.893) !important;
+    border-radius: 8px !important;
+    margin-right: 40px;
+}
+
+/* Task Item Styling */
+.task-item {
+    transition: background-color 0.3s ease;
+}
+
+.task-item h6,
+.task-item p {
+    margin: 0;
+}
+
+.task-item a.btn-light {
+    border-radius: 8px;
+}
+
+.task-item a.btn-light:hover{
+    background-color: rgba(92, 92, 92, 0.818);
+    border: rgba(92, 92, 92, 0.818);
+    color: white;
+}
+
+/* DataTable Styling */
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_length {
+    margin-bottom: 1rem;
+}
+
+/* Notification Styling */
+.alert {
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    z-index: 1050; /* Higher than other elements */
+    width: 400px; /* Adjust width as needed */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add some shadow for a floating effect */
+}
+
+
+/* Remove the SVG icon */
+/* Success Alert */
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+}
+
+/* Error Alert */
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+}
+
+/* Adjusting the icon size and position */
+.alert i {
+    font-size: 1.5rem;
+}
+
+/* Position the alerts at the top-right corner */
+.position-fixed {
+    z-index: 1050; /* Ensure the alerts are on top of other elements */
+    width: auto;
+    max-width: 300px; /* Limit the width of the notification */
+}
+
+/* overdue */
+.overdue-task {
+    color: red;
+}
+
+/* Dashboard Styling */
+.dropdown-toggle-dashboard::after {
+    display: none;
+}
