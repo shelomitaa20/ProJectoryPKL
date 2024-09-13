@@ -7,60 +7,65 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+# Project Management Web Application (ProJectory)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+**Developed using Laravel (PHP), JavaScript, HTML, CSS**  
+Development Environment: **Visual Studio Code**
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Project Overview
+This web application is designed to manage projects, tasks, and team collaborations. It includes features for both admin and team members to track project progress, manage tasks, and view detailed reports.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Features
 
-## Learning Laravel
+### Authentication
+- **Login/Register**:
+  - **Register**: Team Member registration.
+  - **Login**: Admin & Team Member login.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Admin Dashboard
+- Overview of:
+  - Total projects
+  - Projects in progress
+  - Completed projects
+  - Total users
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### Team Dashboard
+- Overview of:
+  - Total projects owned by the team member
+  - Projects in progress
+  - Completed projects
+  - Total tasks to be completed
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Profile Management
+- **Edit Profile**: Update personal details.
 
-## Laravel Sponsors
+### Project Management
+- **Project List**: View a table of projects owned by the team member with options to:
+  - View project details
+  - Edit project
+  - Delete project
+- **Add New Project**: Modal to create a new project.
+  - Assign team members by their email to collaborate on the project.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### Project Details
+- **Project Description**: View detailed project information.
+- **Project Content**: Tasks related to the project are managed under three status tables:
+  - **To Do**: Tasks to be done (status can be edited, tasks can be deleted).
+  - **In Progress**: Ongoing tasks (status can be edited, tasks can be deleted).
+  - **Completed**: Finished tasks (tasks can be deleted).
 
-### Premium Partners
+### Task Management
+- **Add New Task**: Modal to add a new task (status defaults to "To Do").
+  
+### Admin Reports
+- **Monthly Report**: Admin can generate reports on project and task progress across the system.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+## Technology Stack
+- **Laravel** (Backend)
+- **JavaScript** (Frontend)
+- **HTML/CSS** (Frontend)
+- **Visual Studio Code** (Development IDE)
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Usage
+- Admins can log in to view overall project and user metrics, manage team members, and generate reports.
+- Team members can manage their projects, collaborate with other team members, and track task completion.
